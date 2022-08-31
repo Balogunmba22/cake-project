@@ -207,7 +207,8 @@ input:focus {
 .store-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    padding: 0 4.25rem;
+    place-items: center;
 }
 .item-wrapper {
     position: relative;
@@ -216,7 +217,7 @@ input:focus {
     cursor: pointer; 
 }
 .item-img {
-    width: 17.65rem;
+    width: 20rem;
     transition: all 1s ease-in-out;
 }
 .item-wrapper:hover .item-img {
@@ -236,13 +237,13 @@ input:focus {
     transform: translate(0, 0);
 }
 figcaption {
-    width: 17.65rem;
+    width: 20rem;
     background-color: #fff;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -.33rem;
+    margin-top: -.34rem;
 }
 .fee {
     font-weight: 700;
