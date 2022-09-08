@@ -49,16 +49,13 @@ nav a:hover{
     gap: 1rem;
     margin-right: -9rem;
 }
-.phone span {
-    font-size: .8rem;
-}
+
 .cart-box {
     display: flex;
     align-items: center;
     gap: 1rem;
     border: 1px solid #000;
     padding: .4rem .6rem;
-    font-size: .8rem;
     border-radius: .25rem;
     cursor: pointer;
 }
@@ -80,19 +77,19 @@ section.home {
 }
 .home div {
     color: #fff;
-    font-size: 2rem;
-    margin-top: -4rem;
+    font-size: 2.5rem;
+    /* margin-top: -4rem; */
 }
 .home .grandma {
     color: #ef7998;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
 button {
     border-width: 3px;
     font-family: inherit;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding: .25rem .5rem;
     background-color: transparent;
     border-radius: 3px;
@@ -107,9 +104,9 @@ button:hover {
 /* ABOUT SECTION */
 section.about {
     height: 90vh;
-    padding: 0 5rem;
-    display: grid;
-    grid-template-columns: 50% 1fr;
+    padding: 0 7rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     justify-items: center;
 }
@@ -124,14 +121,13 @@ section.about {
 }
 .about p {
     opacity: 0.8;
-    font-size: .8rem;
     max-width: 70%;
 }
 .about-button {
     border-width: 1px;
     text-transform: uppercase;
-    font-size: .8rem;
     margin-top: 1.25rem;
+    font-size: 1.2rem;
 }
 
 .about-img-container {
@@ -143,8 +139,8 @@ section.about {
     position: absolute;
     top: -1rem;
     left: -1.5rem;
-    width: 27rem;
-    height: 20rem;
+    width: 31rem;
+    height: 22rem;
     outline: 0.4rem solid rgb(249, 228, 148);
     z-index: -1;
     transition: all 1s ease-in-out;
@@ -154,15 +150,15 @@ section.about {
     left: 0;
   }
 .about img {
-    width: 27rem;
-    height: 20rem;
+    width: 31rem;
+    height: 22rem;
 }
 
 /* STORE SECTION */
 section.store {
     min-height: 100vh;
     background-color: rgb(238, 238, 238);
-    padding: 2rem 5rem;
+    padding: 2rem 7rem;
 }
 .store-heading {
     font-size: 2rem;
@@ -180,7 +176,7 @@ section.store {
 }
 .store-btns button {
     border-width: 1px;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 .search-box {
     display: flex;
@@ -207,7 +203,7 @@ input:focus {
 .store-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 4.25rem;
+    /* padding: 0 4.25rem; */
     place-items: center;
 }
 .item-wrapper {
@@ -217,7 +213,7 @@ input:focus {
     cursor: pointer; 
 }
 .item-img {
-    width: 20rem;
+    width: 21rem;
     transition: all 1s ease-in-out;
 }
 .item-wrapper:hover .item-img {
@@ -228,8 +224,8 @@ input:focus {
     bottom: 0;
     right: 0;
     background-color: rgb(249, 228, 148);
-    padding: .5rem;
-    border-top-left-radius: .5rem;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
     transition: all 1s ease-in-out;
     transform: translate(100%, 100%);
 }
@@ -237,7 +233,7 @@ input:focus {
     transform: translate(0, 0);
 }
 figcaption {
-    width: 20rem;
+    width: 21rem;
     background-color: #fff;
     padding: 1rem;
     display: flex;
@@ -247,4 +243,41 @@ figcaption {
 }
 .fee {
     font-weight: 700;
+}
+
+@media (max-width: 640px) {
+    :root {
+        font-size: 10px;
+    }
+    header {
+        padding: .5rem 1rem;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+    .cart-box {
+        display: none;
+    }
+    section.about {
+        display: block;
+        padding-bottom: 2rem;
+    }
+    .about-text {
+        margin: 2rem 0 3rem;
+    }
+    .about img {
+        width: 27rem;
+        display: block;
+        margin: auto;
+    }
+    .about-img-container::before {
+        width: 27rem;
+        top: 0;
+        left: 0;
+    }
+    section.store {
+        padding: 0 3rem;
+    }
+    .store-items {
+        grid-template-columns: 1fr;
+    }
 }
