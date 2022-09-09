@@ -261,7 +261,7 @@ figcaption {
     section.about {
         display: block;
         padding: 0 4rem;
-        min-width: 40vh;
+        height: auto;
     }
     .about-text {
         margin: 2rem 0 3rem;
