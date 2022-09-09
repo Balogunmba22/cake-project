@@ -252,32 +252,45 @@ figcaption {
     header {
         padding: .5rem 1rem;
         justify-content: flex-start;
-        gap: 1.5rem;
+        gap: 1rem;
     }
-    .cart-box {
-        display: none;
+    .phone {
+        margin-right: 0;
     }
+
     section.about {
         display: block;
-        padding-bottom: 2rem;
+        padding: 0 4rem;
     }
     .about-text {
         margin: 2rem 0 3rem;
     }
+    .about p {
+        width: 100%;
+    }
+    .about-img-container {
+        display: flex;
+        justify-content: center;
+    }
     .about img {
-        width: 27rem;
         display: block;
         margin: auto;
+        outline: 0.4rem solid rgb(249, 228, 148);
     }
     .about-img-container::before {
-        width: 27rem;
-        top: 0;
-        left: 0;
+        display: none;
     }
     section.store {
         padding: 0 3rem;
     }
     .store-items {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .item-img {
+        width: 31rem;
+    }
+    figcaption {
+        width: 31rem;
     }
 }
