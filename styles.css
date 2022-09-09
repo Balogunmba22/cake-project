@@ -103,7 +103,7 @@ button:hover {
 
 /* ABOUT SECTION */
 section.about {
-    height: 90vh;
+    min-height: 90vh;
     padding: 0 7rem;
     display: flex;
     justify-content: space-between;
@@ -251,8 +251,8 @@ figcaption {
     }
     header {
         padding: .5rem 1rem;
-        justify-content: flex-start;
-        gap: 1rem;
+        /* justify-content: ; */
+        gap: 2rem;
     }
     .phone {
         margin-right: 0;
@@ -261,6 +261,7 @@ figcaption {
     section.about {
         display: block;
         padding: 0 4rem;
+        min-width: 40vh;
     }
     .about-text {
         margin: 2rem 0 3rem;
@@ -271,10 +272,11 @@ figcaption {
     .about-img-container {
         display: flex;
         justify-content: center;
+        margin-bottom: 0;
     }
     .about img {
         display: block;
-        margin: auto;
+        margin: 0 auto;
         outline: 0.4rem solid rgb(249, 228, 148);
     }
     .about-img-container::before {
