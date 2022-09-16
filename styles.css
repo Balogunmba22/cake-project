@@ -257,13 +257,16 @@ figcaption {
     .cart-box {
         display: none;
     }
+    nav a {
+        padding-left: 1.5rem;
+    }
     .phone {
         margin-right: 0;
     }
 
     section.about {
         display: block;
-        padding: 0 4rem;
+        padding: 0 4rem 3rem;
         height: auto;
     }
     .about-text {
