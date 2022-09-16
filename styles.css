@@ -103,7 +103,7 @@ button:hover {
 
 /* ABOUT SECTION */
 section.about {
-    min-height: 90vh;
+    height: 90vh;
     padding: 0 7rem;
     display: flex;
     justify-content: space-between;
@@ -254,6 +254,9 @@ figcaption {
         /* justify-content: ; */
         gap: 2rem;
     }
+    .cart-box {
+        display: none;
+    }
     .phone {
         margin-right: 0;
     }
@@ -292,10 +295,15 @@ figcaption {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+    .search-icon {
+        padding: .55rem .5rem .15rem;
+    }
     .item-img {
         width: 31rem;
     }
     figcaption {
         width: 31rem;
+        font-size: 1.5rem;
+        padding: 1.5rem;
     }
 }
